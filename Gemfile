@@ -34,6 +34,7 @@ gem 'mysql2'
 group :development, :test do
 #  gem 'rspec'
   gem 'rspec-rails'
+  gem 'webrat'
   # puts scheme details into each model.rb
 end
 
