@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+	<%= stylesheet_link_tag    "custom", :media => "screen" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="page">
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+Login
+<hr>
+
+<div id="sidebar">
+  <ul id="sidebar-items">
+    <li>
+      <h3>Menu</h3>
+    </li>
+  </ul>
+</div>
+
+<%= yield %>
+
+</div> <!-- page -->
+	
+</body>
+</html>
